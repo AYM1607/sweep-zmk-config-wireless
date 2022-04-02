@@ -20,7 +20,19 @@
 };
 
 / { 
-
+	
+	behaviors {
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+    };
+	
     combos {
     };
 
@@ -29,10 +41,10 @@
                 
        		default_layer {
 		bindings = <
-		&kp Q       &kp W   &kp F   &kp P   &kp B 						        &kp J   &kp L   &kp U       &kp Y   &kp BSPC
-		&kp A       &kp R   &kp S   &kp T   &kp G 			        	        &kp M   &kp N   &kp E       &kp I   &kp O
-		&kp Z       &kp X   &kp C   &kp D   &kp V				                &kp K   &kp H   &kp CMMA    &kp DOT &kp SEMI
-          				            &kp LSHFT &kp LCTL  				        &to SYMBOLS_L   &kp SPC
+		&hm ESC Q 	&kp W   &kp F   &kp P   	&kp B 						        &kp J   &kp L   	&kp U       	&kp Y			&kp BSPC
+		&hm TAB A	&kp R   &kp S   &hm LCMD T  &kp G 			        	        &kp M   &hm LCMD N  &kp E       	&kp I   		&hm ENTER O
+		&kp Z       &kp X   &kp C   &kp D   	&kp V				                &kp K   &kp H   	&hm SLASH CMMA	&hm EXCL DOT 	&hm EQUAL SEMI
+          				            &kp LSHFT 	&kp LCTL  				        	&to SYMBOLS_L   	&kp SPC
 		>;
 		};
 
@@ -41,7 +53,7 @@
 		&kp ESC     &kp AT      &kp HASH    &kp DLLR    &kp PRCNT 						    &kp CARET   &kp AMPS    &kp STAR    &kp MINUS   &kp BSPC
 		&kp TAB     &none       &none       &kp APOS    &kp PLUS 			        	    &kp QMARK   &kp LBRC    &kp RBRC    &kp PIPE    &kp ENTER
 		&kp TILDE   &kp GRAVE   &none       &kp DQT     &none				                &kp LBKT    &kp LPAR    &kp RPAR    &kp RBKT    &to NAVI_L
-          				                    &none       &to DEFAULT_L  				        &to NUMBERS_L   &kp SPC
+          				                    &kp LSHIFT  &to DEFAULT_L  				        &to NUMBERS_L   &kp SPC
 		>;
 		};
 		
