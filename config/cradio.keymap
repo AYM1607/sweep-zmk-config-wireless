@@ -51,7 +51,7 @@
        		symbols_layer {
 		bindings = <
 		&kp ESC     &kp AT      &kp HASH    &kp DLLR    &kp PRCNT 						    &kp CARET   &kp AMPS    &kp STAR    &kp MINUS   &kp BSPC
-		&kp TAB     &none       &none       &kp APOS    &kp PLUS 			        	    &kp QMARK   &kp LBRC    &kp RBRC    &kp PIPE    &kp ENTER
+		&kp TAB     &none       &none       &kp APOS    &kp PLUS 			        	    &kp QMARK   &kp LBRC    &kp RBRC    &kp BSLH    &kp ENTER
 		&kp TILDE   &kp GRAVE   &none       &kp DQT     &none				                &kp LBKT    &kp LPAR    &kp RPAR    &kp RBKT    &to NAVI_L
           				                    &kp LSHIFT  &to DEFAULT_L  				        &to NUMBERS_L   &kp SPC
 		>;
