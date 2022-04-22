@@ -68,10 +68,10 @@
 		
 		numbers_layer {
 		bindings = <
-		&kp ESC     &kp C_PP    &kp C_PREV      &kp C_NEXT      &none 						        &kp MINUS   &kp N7      &kp N8      &kp N9      &kp BSPC
-		&kp TAB     &none       &kp C_VOL_DN    &kp C_VOL_UP    &kp PLUS 			        	    &kp EQUAL   &kp N4      &kp N5      &kp N6      &kp ENTER
-		&kp K_POWER &kp STAR    &kp C_BRI_DN    &kp C_BRI_UP    &kp DOT				                &kp N0      &kp N1      &kp N2      &kp N3      &to NAVI_L
-          				                        &none           &to DEFAULT_L  				        &to SYMBOLS_L           &kp SPC
+		&kp ESC     &kp C_PP    &kp C_PREV      &kp C_NEXT      &none 						        &kp MINUS   	&hm F7 N7      &hm F8 N8      &hm F9 N9      &kp BSPC
+		&kp TAB     &none       &kp C_VOL_DN    &kp C_VOL_UP    &kp PLUS 			        	    &kp EQUAL   	&hm F4 N4      &hm F5 N5      &hm F6 N6      &kp ENTER
+		&kp K_POWER &kp STAR    &kp C_BRI_DN    &kp C_BRI_UP    &kp DOT				                &hm F10 N0		&hm F1 N1      &hm F2 N2      &hm F3 N3      &to NAVI_L
+        										&none           &to DEFAULT_L  				        &to SYMBOLS_L	&kp SPC
 		>;
 		};	
         
